@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+label, input, select, textarea {
+    cursor: pointer !important;
+}
+
+
+
+
+.ant-form {
+	margin-top: 30px;
+
+	.form-item {
+		margin-bottom: 20px;
+		&:last-child { margin-bottom: 0; }
+
+		// .has-error {
+		// 	input, textarea {
+		// 		border-color: red;
+		// 		box-shadow: none;
+		// 	}
+		// }
+
+	}
+
+	.ant-form-item-with-help { margin-bottom: 20px; }
+	.ant-form-item :not(.ant-form)>.ant-form-item, .ant-form-item>.ant-form-item { margin-bottom: 0; }
+
+
+
+	::-webkit-input-placeholder { color: #555; }
+	::-moz-placeholder { color: #555; }
+	:-ms-input-placeholder { color: #555; }
+	:-moz-placeholder { color: #555; }
+
+
+}
+
+

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+
+
+
+.info-container {
+
+	.item {
+		margin-bottom: 6px;
+		display: flex;
+		font-size: 16px;
+	}
+
+	.key {
+		font-family: $font_family_monospace;
+		font-size: 14px;
+		font-weight: bold;
+		padding: 6px 16px;
+		min-width: 250px;
+		// background: #EEE;
+		text-align: right;
+		border-radius: 5px 0 0 5px;
+		border: 1px solid #DDD;
+	}
+
+	.value {
+		font-family: $font_family_monospace;
+		font-size: 13px;
+		padding: 6px 16px;
+		// background: #F7F7F7;
+		border: 1px solid #EEE;
+	}
+
+
+}
+
+
+
+
+.approval-container {
+	margin-top: 50px;
+	padding: 30px;
+	border-radius: 5px;
+	text-align: center;
+	border-top: 1px solid #DDD;
+
+	p {
+		font-family: $font_family_monospace;
+		font-size: 17px;
+		line-height: 20px;
+	}
+	
+}
+
+
+
+
+
+
+

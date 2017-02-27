@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+
+
+
+
+aside#main {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: $fixed_header_margin_top;
+    background: #FFF;
+    width: $aside_width;
+    border-right: 1px solid #EEE;
+    // background: #F7F7F7;
+
+    @include transition();
+
+
+    &.hidden {
+        left: -$aside_width;
+        // display: none;
+    }
+
+
+}

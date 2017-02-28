@@ -110,31 +110,31 @@
 
 	var _Auth2 = _interopRequireDefault(_Auth);
 
-	var _EmptyComponent = __webpack_require__(609);
+	var _EmptyComponent = __webpack_require__(610);
 
 	var _EmptyComponent2 = _interopRequireDefault(_EmptyComponent);
 
-	var _Default = __webpack_require__(610);
+	var _Default = __webpack_require__(611);
 
 	var _Default2 = _interopRequireDefault(_Default);
 
-	var _HomePage = __webpack_require__(634);
+	var _HomePage = __webpack_require__(635);
 
 	var _HomePage2 = _interopRequireDefault(_HomePage);
 
-	var _TrainingPage = __webpack_require__(638);
+	var _TrainingPage = __webpack_require__(639);
 
 	var _TrainingPage2 = _interopRequireDefault(_TrainingPage);
 
-	var _AccountPage = __webpack_require__(639);
+	var _AccountPage = __webpack_require__(640);
 
 	var _AccountPage2 = _interopRequireDefault(_AccountPage);
 
-	var _Public = __webpack_require__(640);
+	var _Public = __webpack_require__(641);
 
 	var _Public2 = _interopRequireDefault(_Public);
 
-	var _index = __webpack_require__(641);
+	var _index = __webpack_require__(642);
 
 	var _index2 = _interopRequireDefault(_index);
 
@@ -87501,7 +87501,7 @@
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Footer = __webpack_require__(607);
+	var _Footer = __webpack_require__(608);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -87568,6 +87568,10 @@
 
 	var Action = _interopRequireWildcard(_actions);
 
+	var _helper = __webpack_require__(607);
+
+	var _helper2 = _interopRequireDefault(_helper);
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -87630,7 +87634,7 @@
 			_react2.default.createElement(
 				'div',
 				{ className: 'avatar' },
-				_react2.default.createElement('img', { src: Helper.user.avatar(props.user.get('avatar')), alt: props.user.get('name') })
+				_react2.default.createElement('img', { src: _helper2.default.user.avatar(props.user.get('avatar')), alt: props.user.get('name') })
 			),
 			props.user.get('userType') == 2 ? TrainerNavigation : UserNavigation
 		);
@@ -91968,6 +91972,34 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _reactRouter = __webpack_require__(172);
+
+	var Helper = {
+		user: {
+
+			avatar: function avatar(link) {
+				if (link) {
+					return link;
+				} else {
+					return '/images/avatar.png';
+				}
+			}
+
+		}
+	};
+
+	exports.default = Helper;
+
+/***/ },
+/* 608 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 
@@ -91979,7 +92011,7 @@
 
 	var _reactRouter = __webpack_require__(172);
 
-	var _DB = __webpack_require__(608);
+	var _DB = __webpack_require__(609);
 
 	var Action = _interopRequireWildcard(_DB);
 
@@ -91996,7 +92028,6 @@
 	};
 
 	var WWWFooter = function WWWFooter(props) {
-
 	  return _react2.default.createElement(
 	    'footer',
 	    { id: 'main' },
@@ -92288,7 +92319,7 @@
 	exports.default = ConnectFooter;
 
 /***/ },
-/* 608 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92348,7 +92379,7 @@
 	}
 
 /***/ },
-/* 609 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92402,7 +92433,7 @@
 	exports.default = EmptyComponent;
 
 /***/ },
-/* 610 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92415,7 +92446,7 @@
 
 	var _row2 = _interopRequireDefault(_row);
 
-	var _col = __webpack_require__(611);
+	var _col = __webpack_require__(612);
 
 	var _col2 = _interopRequireDefault(_col);
 
@@ -92425,11 +92456,11 @@
 
 	var _reactRedux = __webpack_require__(235);
 
-	var _Header = __webpack_require__(612);
+	var _Header = __webpack_require__(613);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Aside = __webpack_require__(613);
+	var _Aside = __webpack_require__(614);
 
 	var _Aside2 = _interopRequireDefault(_Aside);
 
@@ -92485,7 +92516,7 @@
 	exports.default = ConnectDefaultLayout;
 
 /***/ },
-/* 611 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92500,7 +92531,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 612 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92521,7 +92552,7 @@
 
 	var _row2 = _interopRequireDefault(_row);
 
-	var _col = __webpack_require__(611);
+	var _col = __webpack_require__(612);
 
 	var _col2 = _interopRequireDefault(_col);
 
@@ -92536,6 +92567,10 @@
 	var _actions = __webpack_require__(318);
 
 	var Action = _interopRequireWildcard(_actions);
+
+	var _helper = __webpack_require__(607);
+
+	var _helper2 = _interopRequireDefault(_helper);
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -92635,7 +92670,7 @@
 			_react2.default.createElement(
 				'div',
 				{ className: 'avatar' },
-				_react2.default.createElement('img', { src: Helper.user.avatar(props.user.get('avatar')), alt: props.user.get('name') })
+				_react2.default.createElement('img', { src: _helper2.default.user.avatar(props.user.get('avatar')), alt: props.user.get('name') })
 			),
 			props.user.get('userType') == 2 ? hostsNavigation : userNavigation
 		);
@@ -92696,7 +92731,7 @@
 	exports.default = ConnectHeader;
 
 /***/ },
-/* 613 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92709,7 +92744,7 @@
 
 	var _icon2 = _interopRequireDefault(_icon);
 
-	var _menu = __webpack_require__(614);
+	var _menu = __webpack_require__(615);
 
 	var _menu2 = _interopRequireDefault(_menu);
 
@@ -92993,7 +93028,7 @@
 	exports.default = ConnectAside;
 
 /***/ },
-/* 614 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93011,11 +93046,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _rcMenu = __webpack_require__(615);
+	var _rcMenu = __webpack_require__(616);
 
 	var _rcMenu2 = _interopRequireDefault(_rcMenu);
 
-	var _openAnimation = __webpack_require__(633);
+	var _openAnimation = __webpack_require__(634);
 
 	var _openAnimation2 = _interopRequireDefault(_openAnimation);
 
@@ -93138,7 +93173,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 615 */
+/* 616 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93148,23 +93183,23 @@
 	});
 	exports.Divider = exports.ItemGroup = exports.MenuItemGroup = exports.MenuItem = exports.Item = exports.SubMenu = undefined;
 
-	var _Menu = __webpack_require__(616);
+	var _Menu = __webpack_require__(617);
 
 	var _Menu2 = _interopRequireDefault(_Menu);
 
-	var _SubMenu = __webpack_require__(624);
+	var _SubMenu = __webpack_require__(625);
 
 	var _SubMenu2 = _interopRequireDefault(_SubMenu);
 
-	var _MenuItem = __webpack_require__(630);
+	var _MenuItem = __webpack_require__(631);
 
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 
-	var _MenuItemGroup = __webpack_require__(631);
+	var _MenuItemGroup = __webpack_require__(632);
 
 	var _MenuItemGroup2 = _interopRequireDefault(_MenuItemGroup);
 
-	var _Divider = __webpack_require__(632);
+	var _Divider = __webpack_require__(633);
 
 	var _Divider2 = _interopRequireDefault(_Divider);
 
@@ -93179,7 +93214,7 @@
 	exports["default"] = _Menu2["default"];
 
 /***/ },
-/* 616 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93192,7 +93227,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _MenuMixin = __webpack_require__(617);
+	var _MenuMixin = __webpack_require__(618);
 
 	var _MenuMixin2 = _interopRequireDefault(_MenuMixin);
 
@@ -93200,7 +93235,7 @@
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
-	var _util = __webpack_require__(622);
+	var _util = __webpack_require__(623);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -93427,7 +93462,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 617 */
+/* 618 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93446,7 +93481,7 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _KeyCode = __webpack_require__(618);
+	var _KeyCode = __webpack_require__(619);
 
 	var _KeyCode2 = _interopRequireDefault(_KeyCode);
 
@@ -93458,7 +93493,7 @@
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _domScrollIntoView = __webpack_require__(619);
+	var _domScrollIntoView = __webpack_require__(620);
 
 	var _domScrollIntoView2 = _interopRequireDefault(_domScrollIntoView);
 
@@ -93466,9 +93501,9 @@
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
-	var _util = __webpack_require__(622);
+	var _util = __webpack_require__(623);
 
-	var _DOMWrap = __webpack_require__(623);
+	var _DOMWrap = __webpack_require__(624);
 
 	var _DOMWrap2 = _interopRequireDefault(_DOMWrap);
 
@@ -93779,7 +93814,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 618 */
+/* 619 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -94304,20 +94339,20 @@
 	module.exports = KeyCode;
 
 /***/ },
-/* 619 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	module.exports = __webpack_require__(620);
-
-/***/ },
 /* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var util = __webpack_require__(621);
+	module.exports = __webpack_require__(621);
+
+/***/ },
+/* 621 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var util = __webpack_require__(622);
 
 	function scrollIntoView(elem, container, config) {
 	  config = config || {};
@@ -94446,7 +94481,7 @@
 	module.exports = scrollIntoView;
 
 /***/ },
-/* 621 */
+/* 622 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -94890,7 +94925,7 @@
 	}, domUtils);
 
 /***/ },
-/* 622 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -94956,7 +94991,7 @@
 	}
 
 /***/ },
-/* 623 */
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95007,7 +95042,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 624 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95018,7 +95053,7 @@
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _SubPopupMenu = __webpack_require__(625);
+	var _SubPopupMenu = __webpack_require__(626);
 
 	var _SubPopupMenu2 = _interopRequireDefault(_SubPopupMenu);
 
@@ -95026,11 +95061,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _KeyCode = __webpack_require__(618);
+	var _KeyCode = __webpack_require__(619);
 
 	var _KeyCode2 = _interopRequireDefault(_KeyCode);
 
-	var _guid = __webpack_require__(626);
+	var _guid = __webpack_require__(627);
 
 	var _guid2 = _interopRequireDefault(_guid);
 
@@ -95038,7 +95073,7 @@
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _util = __webpack_require__(622);
+	var _util = __webpack_require__(623);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -95074,7 +95109,7 @@
 	    onTitleClick: _react.PropTypes.func
 	  },
 
-	  mixins: [__webpack_require__(627)],
+	  mixins: [__webpack_require__(628)],
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
@@ -95431,7 +95466,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 625 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95448,7 +95483,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _MenuMixin = __webpack_require__(617);
+	var _MenuMixin = __webpack_require__(618);
 
 	var _MenuMixin2 = _interopRequireDefault(_MenuMixin);
 
@@ -95549,7 +95584,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 626 */
+/* 627 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -95560,7 +95595,7 @@
 	};
 
 /***/ },
-/* 627 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95569,15 +95604,15 @@
 	  value: true
 	});
 
-	var _KeyCode = __webpack_require__(618);
+	var _KeyCode = __webpack_require__(619);
 
 	var _KeyCode2 = _interopRequireDefault(_KeyCode);
 
-	var _addEventListener = __webpack_require__(628);
+	var _addEventListener = __webpack_require__(629);
 
 	var _addEventListener2 = _interopRequireDefault(_addEventListener);
 
-	var _contains = __webpack_require__(629);
+	var _contains = __webpack_require__(630);
 
 	var _contains2 = _interopRequireDefault(_contains);
 
@@ -95647,7 +95682,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 628 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95677,7 +95712,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 629 */
+/* 630 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -95695,7 +95730,7 @@
 	};
 
 /***/ },
-/* 630 */
+/* 631 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95710,7 +95745,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _KeyCode = __webpack_require__(618);
+	var _KeyCode = __webpack_require__(619);
 
 	var _KeyCode2 = _interopRequireDefault(_KeyCode);
 
@@ -95718,7 +95753,7 @@
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _util = __webpack_require__(622);
+	var _util = __webpack_require__(623);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -95902,7 +95937,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 631 */
+/* 632 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95965,7 +96000,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 632 */
+/* 633 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96000,7 +96035,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 633 */
+/* 634 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96052,7 +96087,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 634 */
+/* 635 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96061,7 +96096,7 @@
 		value: true
 	});
 
-	var _button = __webpack_require__(635);
+	var _button = __webpack_require__(636);
 
 	var _button2 = _interopRequireDefault(_button);
 
@@ -96206,7 +96241,7 @@
 	exports.default = ConnectHomePage;
 
 /***/ },
-/* 635 */
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96215,11 +96250,11 @@
 	  value: true
 	});
 
-	var _button = __webpack_require__(636);
+	var _button = __webpack_require__(637);
 
 	var _button2 = _interopRequireDefault(_button);
 
-	var _buttonGroup = __webpack_require__(637);
+	var _buttonGroup = __webpack_require__(638);
 
 	var _buttonGroup2 = _interopRequireDefault(_buttonGroup);
 
@@ -96230,7 +96265,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 636 */
+/* 637 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96417,7 +96452,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 637 */
+/* 638 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96476,7 +96511,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 638 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96495,7 +96530,7 @@
 
 	var _reactRedux = __webpack_require__(235);
 
-	var _DB = __webpack_require__(608);
+	var _DB = __webpack_require__(609);
 
 	var Action = _interopRequireWildcard(_DB);
 
@@ -96535,7 +96570,7 @@
 	exports.default = ConnectTrainingPage;
 
 /***/ },
-/* 639 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96554,7 +96589,7 @@
 
 	var _reactRedux = __webpack_require__(235);
 
-	var _DB = __webpack_require__(608);
+	var _DB = __webpack_require__(609);
 
 	var Action = _interopRequireWildcard(_DB);
 
@@ -96594,7 +96629,7 @@
 	exports.default = ConnectHomePage;
 
 /***/ },
-/* 640 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96611,7 +96646,7 @@
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Footer = __webpack_require__(607);
+	var _Footer = __webpack_require__(608);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -96629,7 +96664,7 @@
 	exports.default = PublicPage;
 
 /***/ },
-/* 641 */
+/* 642 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96646,7 +96681,7 @@
 
 	var _reactRouter = __webpack_require__(172);
 
-	var _DB = __webpack_require__(608);
+	var _DB = __webpack_require__(609);
 
 	var Action = _interopRequireWildcard(_DB);
 
@@ -96654,7 +96689,7 @@
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Footer = __webpack_require__(607);
+	var _Footer = __webpack_require__(608);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -96808,7 +96843,7 @@
 			Main_section(props),
 			_react2.default.createElement(
 				'div',
-				{ classNameName: 'footer' },
+				{ className: 'footer' },
 				_react2.default.createElement(_Footer2.default, null)
 			)
 		);

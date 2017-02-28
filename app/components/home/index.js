@@ -81,16 +81,13 @@ let Home = (props) => {
           </div>
           {Header_section}
           {Main_section(props)}
-         	<div classNameName="footer">
+         	<div className="footer">
                <Footer/>
            </div>
 				</div>
 	)
 
 }
-
-
-
 
 const ConnectHome = connect(
 	mapStateToProps,

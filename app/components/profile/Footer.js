@@ -21,6 +21,7 @@ const mapDispatchToProps = dispatch => ({
 
 
 let WWWFooter = (props) => {
+
 	return (
 		<footer id="main">
     <div className="container">
@@ -94,7 +95,11 @@ let WWWFooter = (props) => {
    </div>
 		</footer>
 	)
+
 }
+
+
+
 
 const ConnectFooter = connect(
 	mapStateToProps,

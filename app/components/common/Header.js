@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { Popover, Icon, Row, Col } from 'antd';
 import * as Action from 'app/redux/actions';
+import Helper from 'app/global/helper';
 
 
 const mapStateToProps = ( state, ownProps ) => {

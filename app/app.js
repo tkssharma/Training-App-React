@@ -14,6 +14,8 @@ import * as APIMiddleware from 'app/utils/middlewares/API';
 import * as ScriptMiddleware from 'app/utils/middlewares/Script';
 const history = syncHistoryWithStore( browserHistory, store );
 
+require('../public/css/common.css');
+require('../public/css/style.css');
 
 
 import * as Action from 'app/redux/actions';

@@ -1,7 +1,5 @@
 var webpack = require('webpack');
 var path = require('path');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var BUILD_DIR = path.resolve(__dirname, 'public/scripts');
 var APP_DIR = path.resolve(__dirname, 'app');
@@ -71,14 +69,7 @@ var config = {
     node: {
         net: 'empty',
         dns: 'empty',
-    },
-    plugins: [
-        new ExtractTextPlugin("styles.css"),
-        new HtmlWebpackPlugin(
-            title: 'GenNext Training App',
-            filename: 'public/index.html'
-        )
-    ]
+    }
 };
 
 

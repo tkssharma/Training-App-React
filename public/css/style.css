@@ -362,9 +362,9 @@ div.centered { margin: 0 auto; }
 
 .auth-container { background: #CCC; height: 100%; background-size: cover; }
 .auth-container.default { background: url("../images/background/1.jpg") no-repeat center center; }
-.auth-container.royal { background: url("../images/background/2.png") no-repeat center center; }
-.auth-container.kitchen { background: url("../images/background/3.png") no-repeat center center; }
-.auth-container.veggie { background: url("../images/background/4.png") no-repeat center center; }
+.auth-container.royal { background: url("../images/background/2.jpg") no-repeat center center; }
+.auth-container.kitchen { background: url("../images/background/3.jpg") no-repeat center center; }
+.auth-container.veggie { background: url("../images/background/4.jpg") no-repeat center center; }
 .auth-container.chicken { background: url("../images/background/5.jpg") no-repeat center center; }
 .auth-container .logo { max-width: 300px; margin: 0 auto; margin-bottom: 40px; }
 .auth-container .logo img { width: 100%; display: block; }
@@ -799,7 +799,6 @@ a {
 .website { background: #EEE; min-height: 100%; }
 .website.has-header { padding-top: 50px; }
 .website .featured-section { margin: 0 auto; margin-bottom: 40px; margin-top: -50px; padding: 80px 0; background: #000; box-shadow: 0 0 10px #000; }
-.website .featured-section.default { background: url("../images/www/featured.jpg") no-repeat center center; background-size: cover; }
 .website .featured-section img { width: 100%; max-width: 350px; display: block; margin: 0 auto; }
 .website .featured-section h2 { font-size: 32px; color: #000; text-shadow: 1px 1px 1px #FFF; text-align: center; text-transform: uppercase; }
 .website .featured-section p { font-size: 18px; text-align: center; color: #000; font-weight: bold; text-shadow: 1px 1px 1px #FFF; }

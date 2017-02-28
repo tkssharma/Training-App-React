@@ -6,7 +6,6 @@ import { Link } from 'react-router';
 import { Row, Col, Icon, Popover } from 'antd';
 import * as Action from 'app/redux/actions';
 
-import Helper from 'app/global/helper';
 
 
 

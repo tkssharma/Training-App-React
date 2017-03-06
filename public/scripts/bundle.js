@@ -53718,6 +53718,8 @@
 	  value: true
 	});
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -53758,6 +53760,7 @@
 
 	  propTypes: {
 	    component: _react2["default"].PropTypes.any,
+	    componentProps: _react2["default"].PropTypes.object,
 	    animation: _react2["default"].PropTypes.object,
 	    transitionName: _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.string, _react2["default"].PropTypes.object]),
 	    transitionEnter: _react2["default"].PropTypes.bool,
@@ -53775,6 +53778,7 @@
 	    return {
 	      animation: {},
 	      component: 'span',
+	      componentProps: {},
 	      transitionEnter: true,
 	      transitionLeave: true,
 	      transitionAppear: false,
@@ -54022,10 +54026,10 @@
 	    if (Component) {
 	      var passedProps = props;
 	      if (typeof Component === 'string') {
-	        passedProps = {
+	        passedProps = _extends({
 	          className: props.className,
 	          style: props.style
-	        };
+	        }, props.componentProps);
 	      }
 	      return _react2["default"].createElement(
 	        Component,
@@ -54172,7 +54176,7 @@
 	  value: true
 	});
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	var _react = __webpack_require__(1);
 
@@ -86552,8 +86556,8 @@
 	/*!
 	 * for-own <https://github.com/jonschlinkert/for-own>
 	 *
-	 * Copyright (c) 2014-2016, Jon Schlinkert.
-	 * Licensed under the MIT License.
+	 * Copyright (c) 2014-2017, Jon Schlinkert.
+	 * Released under the MIT License.
 	 */
 
 	'use strict';
@@ -86561,10 +86565,10 @@
 	var forIn = __webpack_require__(523);
 	var hasOwn = Object.prototype.hasOwnProperty;
 
-	module.exports = function forOwn(o, fn, thisArg) {
-	  forIn(o, function(val, key) {
-	    if (hasOwn.call(o, key)) {
-	      return fn.call(thisArg, o[key], key, o);
+	module.exports = function forOwn(obj, fn, thisArg) {
+	  forIn(obj, function(val, key) {
+	    if (hasOwn.call(obj, key)) {
+	      return fn.call(thisArg, obj[key], key, obj);
 	    }
 	  });
 	};
@@ -86577,15 +86581,15 @@
 	/*!
 	 * for-in <https://github.com/jonschlinkert/for-in>
 	 *
-	 * Copyright (c) 2014-2016, Jon Schlinkert.
-	 * Licensed under the MIT License.
+	 * Copyright (c) 2014-2017, Jon Schlinkert.
+	 * Released under the MIT License.
 	 */
 
 	'use strict';
 
-	module.exports = function forIn(o, fn, thisArg) {
-	  for (var key in o) {
-	    if (fn.call(thisArg, o[key], key, o) === false) {
+	module.exports = function forIn(obj, fn, thisArg) {
+	  for (var key in obj) {
+	    if (fn.call(thisArg, obj[key], key, obj) === false) {
 	      break;
 	    }
 	  }
@@ -88267,6 +88271,10 @@
 	  return '';
 	}
 
+	function returnDocument() {
+	  return window.document;
+	}
+
 	var ALL_HANDLERS = ['onClick', 'onMouseDown', 'onTouchStart', 'onMouseEnter', 'onMouseLeave', 'onFocus', 'onBlur'];
 
 	var Trigger = _react2["default"].createClass({
@@ -88294,6 +88302,7 @@
 	    focusDelay: _react.PropTypes.number,
 	    blurDelay: _react.PropTypes.number,
 	    getPopupContainer: _react.PropTypes.func,
+	    getDocument: _react.PropTypes.func,
 	    destroyPopupOnHide: _react.PropTypes.bool,
 	    mask: _react.PropTypes.bool,
 	    maskClosable: _react.PropTypes.bool,
@@ -88311,8 +88320,16 @@
 	      return instance.state.popupVisible;
 	    },
 	    getContainer: function getContainer(instance) {
+	      var props = instance.props;
+
 	      var popupContainer = document.createElement('div');
-	      var mountNode = instance.props.getPopupContainer ? instance.props.getPopupContainer((0, _reactDom.findDOMNode)(instance)) : document.body;
+	      // Make sure default popup container will never cause scrollbar appearing
+	      // https://github.com/react-component/trigger/issues/41
+	      popupContainer.style.position = 'absolute';
+	      popupContainer.style.top = '0';
+	      popupContainer.style.left = '0';
+	      popupContainer.style.width = '100%';
+	      var mountNode = props.getPopupContainer ? props.getPopupContainer((0, _reactDom.findDOMNode)(instance)) : props.getDocument().body;
 	      mountNode.appendChild(popupContainer);
 	      return popupContainer;
 	    }
@@ -88322,6 +88339,7 @@
 	    return {
 	      prefixCls: 'rc-trigger-popup',
 	      getPopupClassNameFromAlign: returnEmptyString,
+	      getDocument: returnDocument,
 	      onPopupVisibleChange: noop,
 	      afterPopupVisibleChange: noop,
 	      onPopupAlign: noop,
@@ -88387,8 +88405,9 @@
 	    if (this.isClickToHide()) {
 	      if (state.popupVisible) {
 	        if (!this.clickOutsideHandler) {
-	          this.clickOutsideHandler = (0, _addEventListener2["default"])(document, 'mousedown', this.onDocumentClick);
-	          this.touchOutsideHandler = (0, _addEventListener2["default"])(document, 'touchstart', this.onDocumentClick);
+	          var currentDocument = props.getDocument();
+	          this.clickOutsideHandler = (0, _addEventListener2["default"])(currentDocument, 'mousedown', this.onDocumentClick);
+	          this.touchOutsideHandler = (0, _addEventListener2["default"])(currentDocument, 'touchstart', this.onDocumentClick);
 	        }
 	        return;
 	      }

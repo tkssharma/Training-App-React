@@ -98,6 +98,27 @@ export default {
         }
     },
     trainer: {
+      loadTrainers: (id, callback) => {
+          setTimeout(() => {
+              message.success('Loading Trainer data from server... please wait.', 2);
+          }, 2);
+          return axios.get(`${API.url('trainer')}`)
+              .then((response) => {
+                  if (response.data.code != 200) {
+                      message.error('Error occoured while fetching data from server, please try again after some time.', 2);
+                  } else {
+                      callback(response.data.trainer);
+                      message.success('Host data has been successfully loaded from server', 2);
+                      Helper.public.host.checkRedirect();
+                  }
+              })
+              .catch((error) => {
+                  notification.error({
+                      message: 'Error Occoured',
+                      description: 'Unable to connect to the server.'
+                  });
+              });
+      },
         loadTrainerById: (id, callback) => {
             setTimeout(() => {
                 message.success('Loading Trainer data from server... please wait.', 2);

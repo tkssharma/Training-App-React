@@ -7,7 +7,9 @@
     "watch": "webpack -w",
     "start": "webpack-dev-server --progress --inline",
     "build": "webpack -p --define process.env.NODE_ENV='\"production\"' --progress --colors",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "elint": "eslint . — ext .js — ext .jsx — cache || true",
+
   },
   "author": "TarunSharma",
   "license": "MIT",

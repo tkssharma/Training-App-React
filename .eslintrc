@@ -1,29 +1,45 @@
-{
+module.exports = {
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0
+  },
   "env": {
     "browser": true,
-    "node": true,
-    "es6": true
+    "es6": true,
+    "jquery": true
   },
-  "rules": {
-    "quotes": 0,
-    "no-trailing-spaces": 0,
-    "eol-last": 0,
-    "no-unused-vars": 0,
-    "no-underscore-dangle": 0,
-    "no-alert": 0,
-    "no-lone-blocks": 0
-  },
+  "extends": "airbnb",
   "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true,
-      "experimentalObjectRestSpread": true
-    }
+    "sourceType": "module"
   },
-  "globals": {
-    "jQuery": false,
-    "$": false
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "comma-dangle": [
+      "warn",
+      "never"
+    ],
+    "indent": [
+      "warn",
+      2
+    ],
+    "linebreak-style": [
+      "warn",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    /* Advanced Rules*/
+    "no-unused-expressions": "warn",
+    "no-useless-concat": "warn",
+    "block-scoped-var": "error",
+    "consistent-return": "error"
   }
-
-}
+};

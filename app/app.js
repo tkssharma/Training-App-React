@@ -67,8 +67,6 @@ render(
 				<Route path="/" component={ PublicLayout } >
 					<IndexRoute component={ PublicIndexPage } />
         </Route>
-
-
 			</Router>
 		</Provider>
 	),

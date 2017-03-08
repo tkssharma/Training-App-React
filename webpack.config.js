@@ -25,31 +25,39 @@ var config = {
 
     module: {
         loaders: [{
-            test: /\.js$/,
-            loader: 'babel',
-            exclude: '/node_modules/',
-            include: APP_DIR,
-            query: {
-                presets: ['es2015', 'stage-1', 'react'],
-                plugins: ['antd']
+                test: /\.js$/,
+                loader: 'babel',
+                exclude: '/node_modules/',
+                include: APP_DIR,
+                query: {
+                    presets: ['es2015', 'stage-1', 'react'],
+                    plugins: ['antd']
+                }
+            }, {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                loader: "style-loader!css-loader"
+            }, {
+                test: /\.scss$/,
+                exclude: /node_modules/,
+                loader: "style-loader!css-loader!sass-loader"
+            }, {
+                test: /\.(png|jpg|ttf|eot)$/,
+                exclude: /node_modules/,
+                loader: 'url-loader?limit=10000'
+            }, {
+                test: /\.json$/,
+                exclude: /node_modules/,
+                loader: 'json'
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loaders: ['eslint-loader'],
+
+
             }
-        }, {
-            test: /\.css$/,
-            exclude: /node_modules/,
-            loader: "style-loader!css-loader"
-        }, {
-            test: /\.scss$/,
-            exclude: /node_modules/,
-            loader: "style-loader!css-loader!sass-loader"
-        }, {
-            test: /\.(png|jpg|ttf|eot)$/,
-            exclude: /node_modules/,
-            loader: 'url-loader?limit=10000'
-        }, {
-            test: /\.json$/,
-            exclude: /node_modules/,
-            loader: 'json'
-        }],
+        ],
 
         preLoaders: [{
             test: /\.js?$/,

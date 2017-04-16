@@ -360,15 +360,21 @@ div.centered { margin: 0 auto; }
 
 .section-title { color: #666; text-transform: uppercase; font-size: 34px; line-height: 34px; letter-spacing: -1px; font-weight: 500; }
 
-.auth-container { background: #CCC; height: 100%; background-size: cover; }
-.auth-container.default { background: url("../images/background/1.jpg") no-repeat center center; }
-.auth-container.royal { background: url("../images/background/2.jpg") no-repeat center center; }
-.auth-container.kitchen { background: url("../images/background/3.jpg") no-repeat center center; }
-.auth-container.veggie { background: url("../images/background/4.jpg") no-repeat center center; }
-.auth-container.chicken { background: url("../images/background/5.jpg") no-repeat center center; }
+.auth-container { background: #CCC; height: 100%; background-size: cover;  }
+.auth-container.default { background: url("../images/background/1.jpg") no-repeat center center;     background-size: cover;
+    background-repeat: no-repeat;}
+.auth-container.royal { background: url("../images/background/2.jpg") no-repeat center center;     background-size: cover;
+    background-repeat: no-repeat;}
+.auth-container.kitchen { background: url("../images/background/3.jpg") no-repeat center center;     background-size: cover;
+    background-repeat: no-repeat; }
+.auth-container.veggie { background: url("../images/background/4.jpg") no-repeat center center;     background-size: cover;
+    background-repeat: no-repeat;}
+.auth-container.chicken { background: url("../images/background/5.jpg") no-repeat center center;     background-size: cover;
+    background-repeat: no-repeat;}
 .auth-container .logo { max-width: 300px; margin: 0 auto; margin-bottom: 40px; }
 .auth-container .logo img { width: 100%; display: block; }
-.auth-container .content-container { margin: 0 auto; width: 640px; }
+.auth-container .content-container { margin: 0 auto; width: 640px; 
+    margin-bottom: 40px; }
 .auth-container .content { flex: 1.2; max-width: 400px; box-shadow: 0px 0px 0 rgba(0, 0, 0, 0.1) inset, 0px 0 0 rgba(0, 0, 0, 0.05) inset, 0px 20px 20px rgba(0, 0, 0, 0.05) inset, 0px 30px 20px rgba(0, 0, 0, 0.05) inset; padding: 20px 30px; background: white; background: -moz-linear-gradient(top, white 0%, #f1f1f1 16%, #e1e1e1 17%, #f6f6f6 100%); background: -webkit-linear-gradient(top, white 0%, #f1f1f1 16%, #e1e1e1 17%, #f6f6f6 100%); background: linear-gradient(to bottom, white 0%, #f1f1f1 16%, #e1e1e1 17%, #f6f6f6 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); }
 .auth-container .content .input { margin-top: 6px; }
 .auth-container .content .input:first-child { margin-top: 0; }

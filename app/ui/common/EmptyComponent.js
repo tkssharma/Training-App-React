@@ -13,7 +13,7 @@ let EmptyComponent = (props) => {
 				<div className="heading m-0">
 					<h1>Empty Component Here.</h1>
 					<div className="m-t-20">
-						<a href="#" className="button default">Do Nothing</a>
+						<a href="#" className="button default">404 Nothing | Error page</a>
 					</div>
 				</div>
 			</div>

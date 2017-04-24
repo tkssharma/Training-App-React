@@ -1,91 +1,67 @@
 @charset "UTF-8";
-
-
 .table.default {
-	box-shadow: 0px 0px 0 rgba(0,0,0,0.10),
-				0px 0 0 rgba(0,0,0,0.05),
-				0px 20px 20px rgba(0,0,0,0.05),
-				0px 30px 20px rgba(0,0,0,0.05);
-
-
-	thead > tr > th {
-		background: transparent;
-	}
-
-	.ant-table-tbody {
-		color: #333;
-	}
-
-	tbody > tr > td, thead > tr > th {
-		padding: 16px;
-	}
-
-	thead, .ant-table-footer {
-		background: rgb(255,255,255);
-		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
-		background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
-		background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
-	}
-
-
-	a { color: #2B85E7; }
-
-	.action-links {
-		a {
-			margin-right: 15px;
-			// border: 1px solid #EEE;
-			padding: 4px 8px;
-			background: #FFEB3B;
-			color: #000;
-			&:last-child { margin-right: 0; }
-		}
-	}
-
-
-
+    box-shadow: 0px 0px 0 rgba(0, 0, 0, 0.10), 0px 0 0 rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+    thead>tr>th {
+        background: transparent;
+    }
+    .ant-table-tbody {
+        color: #333;
+    }
+    tbody>tr>td,
+    thead>tr>th {
+        padding: 16px;
+    }
+    thead,
+    .ant-table-footer {
+        background: rgb(255, 255, 255);
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
+    }
+    a {
+        color: #2B85E7;
+    }
+    .action-links {
+        a {
+            margin-right: 15px;
+            // border: 1px solid #EEE;
+            padding: 4px 8px;
+            background: #FFEB3B;
+            color: #000;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }
-
-
-
-
 
 .messages {
-
-	.avatar {
-		img {
-			display: block;
-			border-radius: 50%;
-			width: 60px;
-			height: 60px;
-		}
-
-	}
-
-
-	.info {
-		max-width: 200px;
-		span { display: block; }
-		.user {
-			font-size: 16px;
-			font-weight: bold;
-		}
-		.date {}
-	}
-
-
-	.text {
-		max-width: 600px;
-		white-space: pre-line;
-	}
-
-	.status {
-		text-transform: capitalize;
-		max-width: 120px;
-	}
-
-
+    .avatar {
+        img {
+            display: block;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .info {
+        max-width: 200px;
+        span {
+            display: block;
+        }
+        .user {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .date {}
+    }
+    .text {
+        max-width: 600px;
+        white-space: pre-line;
+    }
+    .status {
+        text-transform: capitalize;
+        max-width: 120px;
+    }
 }
-
-
-

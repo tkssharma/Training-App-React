@@ -1,10 +1,4 @@
 @charset "UTF-8";
-
-
-
-
-
-
 aside#main {
     position: fixed;
     left: 0;
@@ -15,14 +9,9 @@ aside#main {
     width: $aside_width;
     border-right: 1px solid #EEE;
     // background: #F7F7F7;
-
     @include transition();
-
-
     &.hidden {
         left: -$aside_width;
         // display: none;
     }
-
-
 }

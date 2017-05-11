@@ -55,8 +55,7 @@ let WWWHeader = ( props ) => {
 					 placement="bottomRight"
 					 content={popoverContent}
 					 trigger="click"
-					 overlayClassName="header-popover"
-					 >
+					 overlayClassName="header-popover">
 					 <a className="ant-dropdown-link" href="#">{ props.user.get('name') } <Icon type="down" /></a>
 				 </Popover>
 			 </div>
@@ -82,7 +81,7 @@ let WWWHeader = ( props ) => {
 
                   <ul className="nav navbar-nav navbar-right header-navigation-list">
                       <li  className="ng-scope">
-											{user_profile()}
+							{user_profile()}
                       </li>
                   </ul>
               </div>

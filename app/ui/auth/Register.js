@@ -94,7 +94,6 @@ let RegisterPage = (props) => {
 	const ui_logo = (
 		<div className="logo">
 			<Link to="/auth/login">
-				<img src="/images/logo.png" alt=""/>
 			</Link>
 		</div>
 	);

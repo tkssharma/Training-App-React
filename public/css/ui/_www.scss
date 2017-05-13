@@ -91,7 +91,6 @@
             background: -moz-linear-gradient(top, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
             background: -webkit-linear-gradient(top, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
             background: linear-gradient(to bottom, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
-            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=0);
             .title {
                 font-size: 18px;
                 line-height: 18px;
@@ -230,7 +229,7 @@
             background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
             background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
             background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+
         }
         .ant-collapse-content-box {
             padding: 0;
@@ -399,9 +398,7 @@
         background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%);
         background: -webkit-linear-gradient(top, #fefcea 0%, #f1da36 100%);
         background: linear-gradient(to bottom, #fefcea 0%, #f1da36 100%);
-        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36', GradientType=0);
     }
-    .ant-card-body {}
     p {
         font-size: 15px;
     }

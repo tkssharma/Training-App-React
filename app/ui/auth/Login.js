@@ -70,9 +70,8 @@ let LoginPage = (props) => {
 
 
 	const ui_logo = (
-		<div className="logo">
+		<div className="authlogo">
 			<Link to="/">
-				<img src="/images/logo.png" alt=""/>
 			</Link>
 		</div>
 	);

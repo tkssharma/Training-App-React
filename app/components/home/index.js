@@ -6,8 +6,8 @@
   import { Link } from 'react-router';
   import { Row, Col } from 'antd';
   import * as Action from 'app/redux/actions/DB';
-  import Header from 'app/components/common/Header';
-  import Footer from 'app/components/common/Footer';
+  import HeaderComp from 'app/components/common/Header';
+  import FooterComp from 'app/components/common/Footer';
 
   const mapStateToProps = ( state, ownProps ) => {
     return {
@@ -77,12 +77,12 @@
     return (
           <div>
             <div className="header">
-              <Header/>
+              <HeaderComp/>
             </div>
             {Header_section}
             {Main_section(props)}
             <div className="footer">
-                <Footer/>
+                <FooterComp/>
             </div>
           </div>
     )

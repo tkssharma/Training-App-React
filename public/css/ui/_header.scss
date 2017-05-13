@@ -14,7 +14,6 @@ header.main {
     background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
     background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
     border-bottom: 1px solid #CCC;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -141,11 +140,9 @@ header.www {
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.63) 50%, rgba(0, 0, 0, 0) 100%);
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.63) 50%, rgba(0, 0, 0, 0) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.63) 50%, rgba(0, 0, 0, 0) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     // box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.9);
     display: flex;

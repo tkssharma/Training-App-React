@@ -33,13 +33,15 @@ $content_width: 640px;
         margin: 0 auto;
         width: $content_width;
         margin-top: 60px;
+        margin-bottom: 20px;
     }
+
     .content {
         flex: 1.2;
         max-width: 400px;
         box-shadow: 0px 0px 0 rgba(0, 0, 0, 0.10) inset, 0px 0 0 rgba(0, 0, 0, 0.05) inset, 0px 20px 20px rgba(0, 0, 0, 0.05) inset, 0px 30px 20px rgba(0, 0, 0, 0.05) inset;
         padding: 20px 30px;
-        
+
         background: rgb(255, 255, 255);
         background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 16%, rgba(225, 225, 225, 1) 17%, rgba(246, 246, 246, 1) 100%);
         background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 16%, rgba(225, 225, 225, 1) 17%, rgba(246, 246, 246, 1) 100%);

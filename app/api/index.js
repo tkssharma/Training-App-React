@@ -7,6 +7,7 @@ export function url(resource) {
 	if ( !resource ) {
 		return `${config.url}`
 	}
+	console.log(`${config.url}${config[resource]}`);
 	return `${config.url}${config[resource]}`
 }
 export function setAuthToken(token) {

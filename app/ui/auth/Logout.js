@@ -58,7 +58,7 @@
 
 		const ui_message_done = (
 			<div className="content">
-				<h1>You have been successfully logged out.</h1>
+				<h5>You have been successfully logged out.</h5>
 				<Link className="label-marker"  to="/auth/login" className="button default inline m-t-20">Login Again &rarr;</Link>
 			</div>
 		);

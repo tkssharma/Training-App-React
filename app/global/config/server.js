@@ -3,7 +3,7 @@
 export default {
 	url: 'http://localhost:2233/',
 	register: 'auth/register',
-	login: 'auth',
+	login: 'auth/login',
 	validate_auth: 'auth/validate',
 	reset_password: 'auth/reset-password',
 
@@ -18,14 +18,8 @@ export default {
 
 	upload_trainer_documents: 'users/upload-documents',
 	delete_trainer_document: 'users/delete-document',
-
-
-
 	user_messages: 'messages',
-
 	webinar: 'webinar',
-
-	register: 'register',
 	register_messages: 'messages/register',
 	messages: 'messages',
 

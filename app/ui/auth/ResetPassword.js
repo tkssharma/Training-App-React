@@ -63,12 +63,13 @@ let ResetPasswordPage = (props) => {
 
 
 
-	const ui_logo = (
-		<div className="logo">
-			<Link to="/auth/login">
-			</Link>
-		</div>
-	);
+    const ui_logo = (
+			<div className="authlogo">
+				  <Link to="/auth/login">
+				      <img alt="Logo with text" class="" src="../images/logo.png"/>
+				 </Link>
+				</div>
+		);
 
 
 	const ui_form = (
@@ -95,7 +96,7 @@ let ResetPasswordPage = (props) => {
 
 				<div className="form-footer">
 					<button type="submit" className="ant-btn ant-btn-primary">Reset password</button>
-					<Link to="/auth/login">&larr; Back to Login Page</Link>
+					<Link className="label-marker"  to="/auth/login">&larr; Back to Login Page</Link>
 				</div>
 			</form>
 

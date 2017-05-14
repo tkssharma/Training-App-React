@@ -57,7 +57,7 @@ let WWWHeader = (props) => {
 				</div>
 		);
 		let user_profile = () => {
-				if (props.user.get('userType') === 1 || props.user.get('userType') === 2) {
+				if (props.user && (props.user.get('userType') === 1 || props.user.get('userType') === 2)) {
 						return (
 								<div className="dropdown">
 										<Popover
@@ -91,14 +91,14 @@ let WWWHeader = (props) => {
 												type="button">
 												<i className="icon-reorder"></i>
 										</button>
-										<Link to="/" href="" className="navbar-brand logo"><img alt="Logo with text" className="img-responsive" src="../images/logo.jpg"/></Link>
+										<Link to="/" href="" className="navbar-brand logo"><img alt="Logo with text" className="img-responsive" src="../images/logo.png"/></Link>
 								</div>
 
 								<div id="header-navigation" className="collapse navbar-collapse">
 
 										<ul className="nav navbar-nav navbar-right">
 												<li>
-													{{user_profile}}
+													{user_profile}
 												</li>
 
 										</ul>

@@ -71,10 +71,11 @@ let LoginPage = (props) => {
 
 	const ui_logo = (
 		<div className="authlogo">
-			<Link to="/">
-			</Link>
-		</div>
-	);
+				  <Link to="/auth/login">
+				      <img alt="Logo with text" class="" src="../images/logo.png"/>
+				 </Link>
+				</div>
+		);
 
 	const ui_links = (
 		<div className="social">
@@ -105,13 +106,12 @@ let LoginPage = (props) => {
 
 				<div className="form-footer">
 					<button type="submit" className="ant-btn ant-btn-primary">Login Now</button>
-					<Link to="/auth/reset-password">Reset password</Link>
+					<Link className="label-marker" to="/auth/reset-password">Reset password</Link>
 				</div>
 			</form>
 
 		</div>
 	);
-
 
 	return (
 		<div className="flex column">

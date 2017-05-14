@@ -614,26 +614,32 @@ div.centered {
   font-weight: 500; }
 
 .auth-container {
-  background: #CCC;
-  height: 100%;
   background-size: cover; }
   .auth-container.default {
-    background: url("../images/background/1.jpg") no-repeat center center; }
+    background: url("../images/background/1.jpg") no-repeat center center;
+    background-size: cover; }
   .auth-container.royal {
-    background: url("../images/background/2.jpg") no-repeat center center; }
+    background: url("../images/background/2.jpg") no-repeat center center;
+    background-size: cover; }
   .auth-container.kitchen {
-    background: url("../images/background/3.jpg") no-repeat center center; }
+    background: url("../images/background/3.jpg") no-repeat center center;
+    background-size: cover; }
   .auth-container.veggie {
-    background: url("../images/background/4.jpg") no-repeat center center; }
+    background: url("../images/background/4.jpg") no-repeat center center;
+    background-size: cover; }
   .auth-container.chicken {
-    background: url("../images/background/5.jpg") no-repeat center center; }
+    background: url("../images/background/5.jpg") no-repeat center center;
+    background-size: cover; }
   .auth-container .authlogo {
     max-width: 300px;
     margin: 0 auto;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    margin-top: 10px; }
     .auth-container .authlogo img {
       width: 100%;
-      display: block; }
+      display: block;
+      height: 100px;
+      width: 200px; }
   .auth-container .content-container {
     margin: 0 auto;
     width: 640px;
@@ -652,6 +658,9 @@ div.centered {
       margin-top: 6px; }
       .auth-container .content input:first-child {
         margin-top: 0; }
+    .auth-container .content .label-marker {
+      font-size: 16px;
+      color: #2db7f5; }
     .auth-container .content .ant-alert.ant-alert-error {
       background-color: #DD4B39;
       color: #FFF; }
@@ -1079,8 +1088,6 @@ footer#main {
     margin-top: 15px; }
   footer#main input {
     width: 100%;
-    border: 2px solid #FFF;
-    background: rgba(255, 255, 255, 0.8);
     font-size: 15px;
     line-height: 20px;
     font-family: monospace;

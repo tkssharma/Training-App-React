@@ -52,20 +52,19 @@ let ValidateTokenPage = (props) => {
 
 	}
 
-
-
-	const ui_logo = (
-		<div className="logo">
-			<Link to="/auth/login">
-			</Link>
-		</div>
-	);
+	  const ui_logo = (
+			<div className="authlogo">
+				  <Link to="/auth/login">
+				      <img alt="Logo with text" class="" src="../images/logo.png"/>
+				 </Link>
+				</div>
+		);
 
 
 	const ui_no_access_token = (
 		<div className="content">
 			<h1>Access token not present</h1>
-			<Link to="/auth/login" className="button default inline m-t-20">Try logging in again &rarr;</Link>
+			<Link className="label-marker"  to="/auth/login" className="button default inline m-t-20">Try logging in again &rarr;</Link>
 		</div>
 	);
 

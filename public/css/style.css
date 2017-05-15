@@ -864,13 +864,14 @@ header.main {
     margin-left: 40px;
     letter-spacing: -1px; }
     header.main .logo a {
-      color: #000; }
+      color: #ffffff; }
   header.main .navicon {
     margin-left: 30px;
     padding: 10px;
     line-height: 28px;
     font-size: 20px;
     font-weight: 600;
+    color: #ffffff;
     cursor: pointer; }
 
 /* header nav styles start here */

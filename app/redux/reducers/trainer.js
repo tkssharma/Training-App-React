@@ -107,10 +107,5 @@ function Trainer(trainer = trainer_default_data, action) {
     } else {
         return trainer;
     }
-
-
 }
-
-
-
 export default Trainer;

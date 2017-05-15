@@ -1,36 +1,22 @@
-'use strict';
+	'use strict';
 
-export default {
+	export default {
 
-	user: {
+					user : {
 
-		setHasPassword(status) {
-			localStorage.user_hasPassword = status;
-		},
-		getHasPassword() {
-			return localStorage.user_hasPassword || false;
-		},
+									setHasPassword(status) {
+													localStorage.user_hasPassword = status;
+									},
+									getHasPassword() {
+													return localStorage.user_hasPassword || false;
+									},
 
-		setUserType(type) {
-			localStorage.user_userType = type;
-		},
-		getUserType() {
-			return localStorage.user_userType || 1;
-		},
-
-
-
+									setUserType(type) {
+													localStorage.user_userType = type;
+									},
+									getUserType() {
+													return localStorage.user_userType || 1;
+									}
+					}
 
 	}
-
-
-
-
-
-
-
-
-
-
-}
-

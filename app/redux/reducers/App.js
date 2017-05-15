@@ -36,8 +36,6 @@ const application_default_data = Immutable.Map({
 
 });
 
-
-
 function app(app = application_default_data, action) {
 
     if (action.type === APP_CONFIG_TOGGLE_ASIDE) {
@@ -45,9 +43,5 @@ function app(app = application_default_data, action) {
     } else {
         return app;
     }
-
-
 }
-
-
 export default app;

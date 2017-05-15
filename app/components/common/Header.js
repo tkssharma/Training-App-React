@@ -98,7 +98,7 @@ let WWWHeader = (props) => {
 
 										<ul className="nav navbar-nav navbar-right">
 												<li>
-													{user_profile}
+													<Link to="/auth/login">SignIn</Link>
 												</li>
 
 										</ul>

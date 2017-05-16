@@ -1,3 +1,134 @@
+/************************************************/
+/*************header and body landing page************/
+/************************************************/
+body {
+	font-family: "Roboto Light", sans-serif;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #565a5c;
+	background-color: #ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: Roboto Light;
+}
+
+section {
+	padding-bottom: 10px;
+}
+
+.hero{
+    height:525px;
+}
+
+.hero__background {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 600px;
+  video {
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+  }
+}
+
+.va-container-h {
+  width: 100%;
+}
+
+.va-container {
+  display: table;
+  position: relative;
+}
+
+.va-middle {
+  vertical-align: middle;
+}
+
+video {
+  object-fit: contain;
+}
+
+.va-container-v {
+  height: 80%;
+}
+
+.space-1 {
+  margin-bottom: 6.25px;
+}
+
+.text-contrast {
+  color: #fff;
+}
+
+.space-4 {
+  margin-bottom: 25px;
+}
+
+.text-contrast {
+  color: #fff;
+}
+
+.va-top, .va-middle, .va-bottom {
+  display: table-cell;
+}
+
+.text-branding {
+  text-transform: uppercase;
+}
+
+.page-container-full {
+  width: auto;
+}
+
+.btn-semi-transparent {
+  background: rgba(255, 255, 255, 0.5);
+  border-style: none;
+}
+
+.btn-contrast {
+  border-color: #565a5c;
+  border-bottom-color: #383b3c;
+  background-color: #565a5c;
+  color: #fff;
+}
+
+.hero__content-footer {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  left: 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  right: 0;
+}
+
+.home-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  display: block;
+  position: relative;
+  z-index: 120;
+}
+
+.section-heading {
+  h2 {
+    font-size: 40px;
+  }
+  i {
+    margin-bottom: 20px;
+  }
+}
+
 @media (min-width: 768px) {
     .navbar {
         border-radius: 4px;
@@ -442,7 +573,7 @@ footer {
 
 li a:hover {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
 }
 
 @font-face {
@@ -778,7 +909,7 @@ footer .social-holder:after {
             &:focus,
             &:hover {
                 text-decoration: none;
-                background-color: #eee;
+                background-color: #2980b9;
             }
         }
     }

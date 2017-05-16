@@ -91,13 +91,13 @@ let RegisterPage = (props) => {
 
 
 
-			const ui_logo = (
-			<div className="authlogo">
-				  <Link to="/auth/login">
-				      <img alt="Logo with text" class="" src="../images/logo.png"/>
-				 </Link>
-				</div>
-		);
+	const ui_logo = (
+		<div className="logo">
+			<Link to="/auth/login">
+				<img src="/images/logo.png" alt=""/>
+			</Link>
+		</div>
+	);
 
 	const ui_links = (
 		<div className="social">
@@ -136,7 +136,7 @@ let RegisterPage = (props) => {
 
 				<div className="form-footer">
 					<button type="submit" className="ant-btn ant-btn-primary">Register</button>
-					<Link className="label-marker"  to="/auth/login">&larr; Back to Login Page</Link>
+					<Link to="/auth/login">&larr; Back to Login Page</Link>
 				</div>
 			</form>
 
@@ -178,6 +178,5 @@ const ConnectLoginPage = connect(
 
 
 export default ConnectLoginPage;
-
 
 

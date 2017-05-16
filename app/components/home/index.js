@@ -22,7 +22,7 @@
   let Main_section = function(props){
               if(props.trainings){
                 var trainingTemplate = props.trainings.map(function(data){
-                    return (
+                    return (<div>
                       <section className="section ng-scope">
                         <div className="container">
                             <div className="row block-lessons-series">
@@ -47,6 +47,9 @@
                             </div>
                         </div>
                     </section>
+                    <div className="hero__background">
+	</div>
+    </div>
                   )
                 });
                 return trainingTemplate;
@@ -70,6 +73,7 @@
           Knowledge  <small><i>click here to start</i></small>
       </Link>
   </div>
+
   </section>);
 
   let Home = (props) => {

@@ -15,46 +15,8 @@
       user: state.user.get('profile'),
     }
   }
-
   const mapDispatchToProps = dispatch => ({
   });
-
-  let Main_section = function(props){
-              if(props.trainings){
-                var trainingTemplate = props.trainings.map(function(data){
-                    return (<div>
-                      <section className="section ng-scope">
-                        <div className="container">
-                            <div className="row block-lessons-series">
-                                <div className="col-sm-6 item ng-scope">
-                                    <div className="media-holder">
-                                        <a href=""> <img  className="img-responsive"
-                                              src="https://s3-eu-west-1.amazonaws.com/ubmas-bucket/tmp/main-Nodejsss.jpg" />
-                                        </a>
-                                    </div>
-                                    <div className="media-subscription-holder">
-                                        <h3 className="title">
-                                            <p className="ng-binding">{}</p>
-                                        </h3>
-
-                                        <div className="info-line">
-                                            <small className="folder"> <i className="icon-folder-open-alt"></i>
-                                                <a href="#!/youtube/VKtlG5Ke320">watch Training Videos On YouTube</a>
-                                            </small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <div className="hero__background">
-	</div>
-    </div>
-                  )
-                });
-                return trainingTemplate;
-            }
-  }
 
   let Header_section = (<section className="hero ng-scope">
   <div className="container">
@@ -83,8 +45,7 @@
             <div className="header">
               <HeaderComp/>
             </div>
-            {Header_section}
-            {Main_section(props)}
+             {Header_section}
             <div className="footer">
                 <FooterComp/>
             </div>

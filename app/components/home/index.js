@@ -38,6 +38,32 @@
 
   </section>);
 
+    let Video_section = (<section className="hero ng-scope">
+	<div className="hero__background">
+
+		<div className="header-video">
+			<img src="" className="header-video__media " data-video-url="https://www.youtube.com/embed/Scxs7L0vhZ4" data-teaser="video/teaser-video" data-video-width="560" data-video-height="315"/>
+			<video autoplay="true" loop="true" muted="" id="header-video__teaser-video" className="header-video__teaser-video">
+				<source src="video/video.webm" type="video/mp4"/>
+				<source src="video/video.mp4" type="video/mp4"/>
+			</video>
+		</div>
+	</div>
+	<div className="hero__content page-container page-container-full text-center">
+		<div className="va-container va-container-v va-container-h">
+			<div className="va-middle">
+				<div className="visible-lg  visible-md" id="logo">
+				</div>
+				<h1 className="text-bold-heading text-branding text-jumbo text-contrast space-1">
+					Lean how to Code</h1>
+				<div className="h4 text-contrast space-4">Learn different technologies</div>
+				<a href="" data-dismiss="modal" data-toggle="modal" data-target="#infoModal" className="btn btn-primary"> How It Works
+				</a>
+			</div>
+		</div>
+	</div>
+  </section>);
+
   let Home = (props) => {
 
     return (
@@ -45,6 +71,8 @@
             <div className="header">
               <HeaderComp/>
             </div>
+            {Video_section}
+
              {Header_section}
             <div className="footer">
                 <FooterComp/>

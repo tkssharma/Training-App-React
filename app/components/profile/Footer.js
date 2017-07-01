@@ -18,8 +18,6 @@ const mapDispatchToProps = dispatch => ({
 });
 
 
-
-
 let WWWFooter = (props) => {
 
   return (
